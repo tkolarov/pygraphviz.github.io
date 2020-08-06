@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Example &#8212; PyGraphviz</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Download" href="download.html" /> 
+  </head><body>
+<div style="color: black;background-color: white; font-size: 3.2em; text-align: left; padding: 15px 10px 10px 15px">
+PyGraphviz
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="download.html" title="Download"
+             accesskey="P">previous</a></li>
+        <li><a href="index.html">PyGraphviz Home </a> |&nbsp;</li>
+        <li><a href="documentation.html">Documentation </a> |&nbsp;</li>
+        <li><a href="download.html">Download </a> |&nbsp; </li>
+        <li><a href="https://github.com/pygraphviz/">Developer (Github)</a> </li>
+
+        <li class="nav-item nav-item-this"><a href="">Quick Example</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="quick-example">
+<h1>Quick Example<a class="headerlink" href="#quick-example" title="Permalink to this headline">¶</a></h1>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pygraphviz</span> <span class="k">as</span> <span class="nn">pgv</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">G</span><span class="o">=</span><span class="n">pgv</span><span class="o">.</span><span class="n">AGraph</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">G</span>
+<span class="go">strict graph {</span>
+<span class="go">        a;</span>
+<span class="go">        b -- c;</span>
+<span class="go">}</span>
+</pre></div>
+</div>
+<p>To load a dot file use</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">G</span><span class="o">=</span><span class="n">pgv</span><span class="o">.</span><span class="n">AGraph</span><span class="p">(</span><span class="s2">&quot;file.dot&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>See more <a class="reference external" href="http://pygraphviz.github.io/documentation/latest/examples.html">simple and complicated examples</a>.</p>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div class="sidebarblock">
+        <h3>Versions</h3>
+
+        <div class="tile">
+        1.6 &ndash; August 05 2020<br/>
+        <a href="http://pypi.python.org/pypi/pygraphviz/">downloads</a> | <a href="http://pygraphviz.github.io/documentation/pygraphviz-1.6/">docs</a> | <a href="http://pygraphviz.github.io/documentation/pygraphviz-1.6/pygraphviz.pdf">pdf</a>
+        </div>
+ 
+</div>
+<div class="sidebarblock">
+<h3>Contact</h3>
+  <ul class="simple">
+    <li>
+        <a class="reference external" href="http://groups.google.com/group/pygraphviz-discuss/">
+            Mailing list</a> 
+        </li>
+    <li><a class="reference external" href="https://github.com/pygraphviz/pygraphviz/issues">
+            Issue tracker</a></li>
+
+  </ul>
+<a href="https://github.com/pygraphviz/pygraphviz"> 
+<img src='_static/octocats.png' alt='octocat' width=96>
+</a>
+
+</div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="download.html" title="Download"
+             >previous</a></li>
+        <li><a href="index.html">PyGraphviz Home </a> |&nbsp;</li>
+        <li><a href="documentation.html">Documentation </a> |&nbsp;</li>
+        <li><a href="download.html">Download </a> |&nbsp; </li>
+        <li><a href="https://github.com/pygraphviz/">Developer (Github)</a> </li>
+
+        <li class="nav-item nav-item-this"><a href="">Quick Example</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2004-2020, PyGraphviz developer team.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
+    </div>
+  </body>
+</html>
